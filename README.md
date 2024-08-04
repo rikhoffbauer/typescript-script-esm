@@ -11,7 +11,8 @@ Script tag support for TypeScript es modules with react support.
   <body>
     <main id="app"></main>
     <script type="text/typescript">
-      import React, { createRoot } from "https:/esm.sh/react";
+      import React from "https:/esm.sh/react";
+      import React, { createRoot } from "https:/esm.sh/react-dom/client";
 
        function App() {
          return <div>Hello, World!</div>;
