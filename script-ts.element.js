@@ -6,6 +6,7 @@
             constructor() {
                 super();
                 this.shadow = this.attachShadow({ mode: 'open' });
+                this.style.display = 'none'; // Hide the content of the custom element
             }
 
             async connectedCallback() {
@@ -62,4 +63,4 @@
             }
         }
 
-        customElements.define('typescript', TypeScriptElement);
+        customElements.define('script-ts', TypeScriptElement);
