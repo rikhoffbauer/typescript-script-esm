@@ -62,7 +62,7 @@
             })();
         }
         elem = document.createElement('script');
-        elem.type = 'text/javascript';
+        elem.type = 'module';
         elem.innerHTML = '//Compiled TypeScript\n\n' + source;
         body.appendChild(elem);
     };
