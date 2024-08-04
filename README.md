@@ -10,7 +10,7 @@ Script tag support for TypeScript es modules with react support.
 <html>
   <body>
     <main id="app"></main>
-    <script type="text/typescript">
+    <script-ts>
       import React from "https:/esm.sh/react";
       import React, { createRoot } from "https:/esm.sh/react-dom/client";
 
@@ -20,9 +20,8 @@ Script tag support for TypeScript es modules with react support.
 
        const root = createRoot(document.getElementById("app"));
        root.render(<App />)
-    </script>
-    <script src="https://unpkg.com/typescript@5.5.4/lib/typescript.js"></script>
-    <script src="https://github.com/rikhoffbauer/typescript-script-esm/raw/master/transpiler.js"></script>
+    </script-ts>
+    <script src="https://github.com/rikhoffbauer/typescript-script-esm/raw/master/script-ts.element.js"></script>
   </body>
 </html>
 ```
