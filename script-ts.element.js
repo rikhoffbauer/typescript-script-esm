@@ -35,10 +35,10 @@ class TypeScriptElement extends HTMLElement {
         if (!window.ts) return;
 
         const code = this.innerHTML.trim();
-      
+        let compilerOptions = {};
         try {
           const compilerOptionsStr = this.getAttribute('compilerOptions');
-          const compilerOptions = JSON.parse(compilerOptionsStr);
+          compilerOptions = JSON.parse(compilerOptionsStr);
         } catch(err) {
           console.group(`Failed to parse compilerOptions`);
           console.groupCollapsed(`compilerOptions`);
