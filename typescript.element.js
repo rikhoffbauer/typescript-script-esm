@@ -41,7 +41,7 @@
                 } catch(err) {
                   console.group(`Failed to parse compilerOptions`);
                   console.groupCollapsed(`compilerOptions`);
-                  console.log(
+                  console.log(compilerOptionsStr);
                   console.groupEnd();
                   console.error(err.message);
                   console.groupEnd();
